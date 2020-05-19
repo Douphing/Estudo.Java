@@ -1,0 +1,19 @@
+import javax.swing.JFrame; //utilização da classe JFrame
+public class Grafical
+{
+	JFrame janela =new JFrame(); //criar um objeto chamada 'janela1'
+	
+	private Grafical() //construtor da classe
+	{
+		janela1.setTitle("aplicação Grafica - Primeiro Programa");  //title janela 1
+		janela1.setSize(400,183); //largura e altura da janela
+		janela1.setLocation(63, 63); //define a posicao da janela coluna e linha
+		janela1.setDefaultCloseOperation(JFrame.Exit_ON_CLOSE); //ao fechar a janela encerra
+		janela1.setVisible(true); //definição para janela visual
+		
+	}
+	public static void main(String [] args)
+	{
+		new Grafical();//instancia que ira executar a janela com tudo que ha nela
+	}
+}
